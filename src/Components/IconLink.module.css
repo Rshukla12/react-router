@@ -1,0 +1,9 @@
+.main {
+    display: flex;
+    gap: 10px;
+}
+.icon {
+    margin-top: 5px;
+    width: 16px;
+    height: 16px;
+}
