@@ -81,7 +81,7 @@ const Navbar = () => {
             {
                 data.map( link => (
                     link.icon ? (
-                        <IconLink to="/cart" title="Cart" src={Shopping} />
+                        <IconLink key={link.to} to="/cart" title="Cart" src={Shopping} />
                     ) : (
                         <Link key={link.to} to={link.to}>{link.route}</Link>
                     )

@@ -1,0 +1,84 @@
+{
+    "products":[
+        {
+            "id": 1,
+            "category": "smartphone",
+            "price": 23111,
+            "name": "IPhone mini",
+            "brand": "Apple",
+            "image": "https://placeimg.com/640/480/tech"
+        },
+        {
+            "id": 2,
+            "category": "smartphone",
+            "price": 43911,
+            "name": "IPhone X",
+            "brand": "Apple",
+            "image": "https://placeimg.com/640/480/tech"
+        },
+        {
+            "id": 3,
+            "category": "smartphone",
+            "price": 64911,
+            "name": "IPhone 12",
+            "brand": "Apple",
+            "image": "https://placeimg.com/640/480/tech"
+        },
+        {
+            "id": 4,
+            "category": "smartphone",
+            "price": 121911,
+            "name": "IPhone 13",
+            "brand": "Apple",
+            "image": "https://placeimg.com/640/480/tech"
+        },
+        {
+            "id": 5,
+            "category": "smartphone",
+            "price": 143911,
+            "name": "Galaxy Fold 3",
+            "brand": "Samsung",
+            "image": "https://placeimg.com/640/480/tech"
+        },
+        {
+            "id": 6,
+            "category": "earphone",
+            "price": 23911,
+            "name": "Airpod 2",
+            "brand": "Apple",
+            "image": "https://placeimg.com/640/480/tech"
+        },
+        {
+            "id": 7,
+            "category": "earphone",
+            "price": 19911,
+            "name": "Galaxy buds",
+            "brand": "Samsung",
+            "image": "https://placeimg.com/640/480/tech"
+        },
+        {
+            "id": 8,
+            "category": "earphone",
+            "price": 12911,
+            "name": "Headest Pro S1",
+            "brand": "Sony",
+            "image": "https://placeimg.com/640/480/tech"
+        },
+        {
+            "id": 9,
+            "category": "laptop",
+            "price": 90999,
+            "name": "Macbook Air 2021",
+            "brand": "Apple",
+            "image": "https://placeimg.com/640/480/tech"
+        },
+        {
+            "id": 10,
+            "category": "laptop",
+            "price": 129911,
+            "name": "Zenbook duo",
+            "brand": "ASUS",
+            "image": "https://placeimg.com/640/480/tech"
+        }
+    ]
+}

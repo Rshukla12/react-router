@@ -10,12 +10,9 @@ import RSS from "../Icons/rss.svg";
 import IconLink from "./IconLink";
 
 const FooterElem = styled.div`
-    position: absolute;
-    bottom: 0;
     background-color:  #0288d1;
     display: flex;
     width: 80%;
-
     padding: 1% 10%;
     gap: 10%;
 `;
