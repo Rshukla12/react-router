@@ -1,0 +1,9 @@
+.home {
+    margin-top: 8%;
+}
+
+.products {
+    display: flex;
+    gap: 1%;
+    flex-wrap: wrap;
+}

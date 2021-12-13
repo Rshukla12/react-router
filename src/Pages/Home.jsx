@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import ProductCard from "../Components/ProductCard";
+import Banner from "../Components/Banner";
+import styles from "./Home.module.css";
 
 const Home = () => {
     const [data, setData] = useState([]);
@@ -22,19 +24,20 @@ const Home = () => {
         fetchProducts();
     }, [])
     return (
-        <div>
-            Home Page
-            {
-                data.map( pro => (
-                    <ProductCard key = {pro.id}
-                        title={pro.title}
-                        brand={pro.brand}
-                        img={pro.image}
-                        category={pro.category}
-                        price={pro.price}
-                    />
-                ))
-            }
+        <div className={styles.home} >
+            <Banner />
+            <div className={styles.products}>
+                {
+                    data.map( pro => (
+                        <ProductCard key = {pro.id}
+                            title={pro.title}
+                            img={pro.image}
+                            price={pro.price}
+                            id={pro.id}
+                        />
+                    ))
+                }
+            </div>
         </div>
     )
 }

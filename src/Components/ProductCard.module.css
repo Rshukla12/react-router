@@ -1,0 +1,27 @@
+.card, .infoCard {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 1.5px 5px 3px rgba(0, 0, 0, 0.2);
+    margin: 2rem;
+    text-decoration: none;
+    padding-bottom: 1rem;
+}
+.infoCard {
+    margin: auto;
+}
+.img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.details, .info{
+    display: flex;
+    justify-content: space-evenly;
+}
+.details div, .info div {
+    font-size: 1.4rem;
+    color: black;
+    text-decoration: none;
+}

@@ -32,17 +32,18 @@ const CategoryView = () => {
     return (
         <div>
             <h1>{category}</h1>
-            {
-                data.map( pro => (
-                    <ProductCard key = {pro.id}
-                        title={pro.title}
-                        brand={pro.brand}
-                        img={pro.image}
-                        category={pro.category}
-                        price={pro.price}
-                    />
-                ))
-            }
+            <div style={{display:"flex", gap: "1%", flexWrap: "wrap"}}>
+                {
+                    data.map( pro => (
+                        <ProductCard key = {pro.id}
+                            title={pro.title}
+                            img={pro.image}
+                            price={pro.price}
+                            id={pro.id}
+                        />
+                    ))
+                }
+            </div>
         </div>
     )
 }

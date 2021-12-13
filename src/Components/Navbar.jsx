@@ -62,7 +62,7 @@ const Nav = styled.div`
     & > * {
         text-decoration: none;
         color: #e3f2fd;
-        padding: 1rem 2rem; 
+        padding: 1% 2%; 
     }
     & > *:nth-child(1) {
         position: absolute;
