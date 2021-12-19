@@ -42,8 +42,16 @@ const CartContextProvider = ( { children } ) => {
         return qty;
     }
 
+    const getTotal = () => {
+        let res = 0;
+        for ( const prod of cart ){
+            res += ( prod.price * prod.qty ); 
+        }
+        return res;
+    }
+
     return (
-        <CartContext.Provider value={[cart, {addProd, removeProd, changeProdQuan, prodInCart}]}>
+        <CartContext.Provider value={[cart, {addProd, removeProd, changeProdQuan, prodInCart, getTotal}]}>
             { children }
         </CartContext.Provider>
     )

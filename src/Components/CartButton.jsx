@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { CartContext } from "../Context/CartContextProvider";
 
-const CartButton = ( prod ) => { 
+const CartButton = ( {prod} ) => { 
     const [qty, setQty] = useState(0);
     const { 
         addProd, 
@@ -12,7 +12,7 @@ const CartButton = ( prod ) => {
 
     useEffect(() => {
         setQty(prodInCart( prod.id ));
-    }, []);
+    }, [prod, prodInCart]);
 
     const handleUpdate = ( e ) => {
         switch(e.target.name){
