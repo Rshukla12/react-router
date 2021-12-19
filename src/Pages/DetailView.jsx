@@ -8,7 +8,7 @@ const DetailView = () => {
     const [data, setData] = useState(null);
     
     const getProducts = ( { prodId } ) => {
-       return axios.get( `http://localhost:3000/products/${prodId}` );
+       return axios.get( `http://localhost:5000/products/${prodId}` );
     }
 
     const fetchProducts = async ( { prodId } ) => {
@@ -18,10 +18,6 @@ const DetailView = () => {
         } catch ( err ) {
             console.log( err );
         }
-    }
-
-    const addToCart = () => {
-        // will handle later
     }
 
     useEffect( () => {
@@ -43,7 +39,6 @@ const DetailView = () => {
                         />
                 )
             }
-            <button onClick={addToCart}>Add to Cart</button>
         </div>
     )
 }

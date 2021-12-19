@@ -8,7 +8,7 @@ const CategoryView = () => {
     const [data, setData] = useState([]);
     
     const getProducts = ( { cat } ) => {
-       return axios.get( "http://localhost:3000/products" , {
+       return axios.get( "http://localhost:5000/products" , {
             params: {
                 category: cat
             }

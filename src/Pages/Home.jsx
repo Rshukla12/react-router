@@ -8,7 +8,7 @@ const Home = () => {
     const [data, setData] = useState([]);
     
     const getProducts = () => {
-       return axios.get( `http://localhost:3000/products` );
+       return axios.get( `http://localhost:5000/products` );
     }
 
     const fetchProducts = async ( ) => {

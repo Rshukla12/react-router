@@ -1,26 +1,45 @@
 import React from "react";
-import { Redirect } from "react-router";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
+import CartButton from "./CartButton";
 import styles from "./ProductCard.module.css";
 
-const ProductCard = ( { id, title, price, brand, img, category, info } ) => {
+const ProductCard = ( prod ) => {
+    const history = useHistory()
+    
+    const { 
+        id, 
+        title, 
+        price, 
+        brand, 
+        img, 
+        category, 
+        info 
+    } = prod;
+    
+    const displayProd = () => {
+        history.push(`/details/${id}`);
+    }
 
     return (
-        <Link className={ info ? styles.infoCard : styles.card } to={`/details/${id}`} >
+        <div className={ info ? styles.infoCard : styles.card } onClick={displayProd} >
             <img className={styles.img} src={img} alt={title} />
             <div>
                 <div className={styles.details}>
                     <div className={styles.title}>{title}</div>
                     <div className={styles.price}>Price - &#8377;{price}</div>
                 </div>
-                { info && ( 
-                    <div className={styles.info} >
-                        <div> Brand - {brand}</div>
-                        <div> Category - {category}</div>
+                { info && (
+                    <div>
+                        <div className={styles.info} >
+                            <div> Brand - {brand}</div>
+                            <div> Category - {category}</div>
+                        </div>
+                        <CartButton prod={prod} />
                     </div> 
+
                 ) }
             </div>
-        </Link>
+        </div>
     )
 }
 
